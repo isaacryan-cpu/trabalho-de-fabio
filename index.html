@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Flamengo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #111;
+            color: #fff;
+        }
+
+        header {
+            background-color: #c40000;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #000;
+            border: 2px solid #c40000;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .container h2 {
+            color: #c40000;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #c40000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a00000;
+        }
+
+        footer {
+            background-color: #c40000;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Clube de Regatas do Flamengo</h1>
+</header>
+
+<main class="container">
+    <h2>Formulário do Torcedor</h2>
+
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Digite seu email" required>
+
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" placeholder="Sua idade">
+
+        <label for="idolo">Ídolo do Flamengo</label>
+        <select id="idolo">
+            <option>Selecione...</option>
+            <option>Zico</option>
+            <option>Gabigol</option>
+            <option>Adriano</option>
+            <option>Arrascaeta</option>
+            <option>Bruno Henrique</option>
+        </select>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" placeholder="Deixe sua mensagem para o Mengão"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</main>
+
+<footer>
+    <p>🔴⚫ Flamengo até morrer ⚫🔴</p>
+</footer>
+
+</body>
+</html>
